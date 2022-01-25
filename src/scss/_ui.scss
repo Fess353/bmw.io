@@ -1,0 +1,38 @@
+html,
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+::-webkit-scrollbar-track-piece
+{
+    background-color:transparent;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+@import "mixin";
+
+:root {
+	--main-padding: 16px;
+
+	@include xxl {
+		--main-padding: 64px;
+	}
+}
+

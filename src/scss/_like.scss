@@ -1,0 +1,85 @@
+@import "vars";
+@import "mixin";
+
+.like {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+
+	@include xxl {
+		gap: 13px;
+	}
+
+	// .like__button
+	&__button {
+		background-color: rgba(153, 153, 153, 0.2);
+		backdrop-filter: blur(4px);
+		padding: 15px 17px 21px 17px;
+		border: none;
+		outline: none;
+		transition: 200ms all ease;
+		
+
+		&:hover {
+			background-color: rgba(243, 106, 29, 0.1);
+
+			&:active {
+				// opacity: 0.2;
+			}
+
+			& .like__image {
+				path {
+					fill: #f7aa7f;
+				}
+			}
+		}
+
+		&:active {
+			background-color: transparent;
+		}
+
+		&_active {
+			background-color: transparent;
+
+			& .like__image {
+				path {
+					fill: #F36A1D !important;
+				}
+			}
+		}
+
+		&:disabled {
+			// background-color: rgba(153, 153, 153, 0.2);
+		}
+	}
+
+	// .like__image
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+
+	// .like__counter
+	&__counter {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 3px;
+		padding-bottom: 6px;
+
+		@include xxl {
+			gap: 5px;
+		}
+	}
+
+	// .like__text
+	&__text {
+
+		// .like__text_orange
+		&_orange {
+			color: $bank2;
+		}
+	}
+}

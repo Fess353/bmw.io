@@ -1,0 +1,32 @@
+// Общие настройки
+$font-formats: ("eot", "woff", "ttf");
+$url-img: "../img"; // Путь к изображениям
+$url-font: "../fonts"; // Путь к шрифтам
+
+// Переменные цветов
+$bank1: #727272;
+$bank2: #F36A1D;
+$bank3: #393939;
+
+
+// Переменные градиентов
+$grad1: linear-gradient(90deg, rgba(243, 106, 29, 0) 0%, #F36A1D 48.23%, rgba(243, 106, 29, 0) 99.27%);
+$grad2: radial-gradient(20.46% 33.99% at 0% 0%, #FF9254 0%, rgba(251, 188, 129, 0) 100%);
+$grad3: linear-gradient(to right, rgba(153, 153, 153, 0), rgba(114, 114, 114, 1));
+$grad4: linear-gradient(to right, rgba(243, 107, 29, 0), rgba(243, 106, 29, 1));
+
+
+// $buttons-color:#2a418d;
+// $buttons-hover-color: #3e55a1;
+// $buttons-active-color: #3e55a1;
+// $buttons-focus-color: #2a418d;
+// $buttons-dis-color: #a4a8ac;
+
+// prettier-ignore
+$screen-xxs: 320px;
+$screen-xs: 360px; //1
+$screen-sm: 768px; //2
+$screen-md: 1024px;
+$screen-lg: 1280px; //3
+$screen-xl: 1440px;
+$screen-xxl: 1920px;
