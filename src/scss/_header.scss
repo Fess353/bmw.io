@@ -1,17 +1,19 @@
 
 .header {
 	position: relative;
-	width: min-content;
+	width: max-content;
 	height: 97px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 
 	@include xxl {
 		height: 187px;
 	}
 
 	// .header__logo
-	&__logo {}
+	&__logo {
+		position: relative;
+	}
 }

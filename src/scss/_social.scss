@@ -2,16 +2,12 @@
 .social {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-
-	@include xxl {
-		gap: 15px;
-	}
 
 	// .social__item
 	&__item {
 		width: 34px;
 		height: 33px;
+		margin-bottom: 20px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -19,6 +15,13 @@
 		@include xxl {
 			width: 44px;
 			height: 44px;
+			margin-bottom: 0;
+			margin-right: 15px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+			margin-right: 0;
 		}
 
 		&:hover .social__icon {

@@ -157,6 +157,9 @@ function startFunctions() {
 	setLikeStateByCookie(currentSlideIndex);
 	imgToSvg();
 	scrollImagesToStartPos();
+	setTimeout(() => {
+		scrollImagesToStartPos();
+	}, 200);
 	window.scrollTo(0,1);
 };
 
@@ -263,6 +266,7 @@ function scrollImagesToStartPos() {
 	let slideOffsetScroll = image.width() * 0.166;
 	image.parent().scrollLeft(slideOffsetScroll)
 };
+
 
 // Показать Попап
 function showPopup() {
