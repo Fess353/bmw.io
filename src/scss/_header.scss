@@ -1,9 +1,7 @@
-@import "vars";
-@import "mixin";
 
 .header {
 	position: relative;
-	width: 100%;
+	width: min-content;
 	height: 97px;
 	display: flex;
 	flex-direction: row;
@@ -12,13 +10,6 @@
 
 	@include xxl {
 		height: 187px;
-	}
-
-	// .header__title
-	&__title {}
-
-	// .header__number
-	&__number {
 	}
 
 	// .header__logo

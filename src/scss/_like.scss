@@ -1,5 +1,3 @@
-@import "vars";
-@import "mixin";
 
 .like {
 	display: flex;
@@ -25,10 +23,6 @@
 		&:hover {
 			background-color: rgba(243, 106, 29, 0.1);
 
-			&:active {
-				// opacity: 0.2;
-			}
-
 			& .like__image {
 				path {
 					fill: #f7aa7f;
@@ -51,7 +45,14 @@
 		}
 
 		&:disabled {
-			// background-color: rgba(153, 153, 153, 0.2);
+			backdrop-filter: none;
+			opacity: 0.3;
+
+			& .like__image {
+				path {
+					fill: #727272;
+				}
+			}
 		}
 	}
 

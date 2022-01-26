@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "BMW Razorite",
+  "description": "BMW Vision Efficient Dynamics, BMW i8 — автомобиль компании BMW. Концепт-кар был представлен в 2009 году, первый серийный образец — на Франкфуртском автосалоне в сентябре 2013 года",
+  "icons": {
+    "60": "favicon/firefox_app_60x60.png",
+    "128": "favicon/firefox_app_128x128.png",
+    "512": "favicon/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}

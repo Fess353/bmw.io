@@ -15,9 +15,9 @@ export const favicon = () => {
 	.pipe(app.gulp.dest(app.path.build.favicon))
     // закинули в папку с результатом оригинал
 	.pipe(favicons({
-		appName: `Rusagro`,
-		appShort_name: `Rusagro`,
-		appDescription: `Rusagro один из крупнейших производителей сахара в России`,
+		appName: `BMW Razorite`,
+		appShort_name: `BMW`,
+		appDescription: `BMW Vision Efficient Dynamics, BMW i8 — автомобиль компании BMW. Концепт-кар был представлен в 2009 году, первый серийный образец — на Франкфуртском автосалоне в сентябре 2013 года`,
 		icons: {
 			favicons: true,
 			appleIcon: true,
